@@ -1,0 +1,21 @@
+:root{ --text: #050200;
+--background: #fdeadd;
+--primary: #0a66a3;
+--secondary: #f9c9a9;
+--accent: #0d7ec9;
+
+
+--font-title: 32px;
+--font-body: 18px;
+--font-small: 14px;
+--font-weight-regular: normal;
+--font-weight-bold: bold;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+}
