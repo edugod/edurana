@@ -15,7 +15,23 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--text);
-    background-color: var(--background);
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--background);
+}
+
+.placar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lado {
+    width: 200px;
+    padding: 20px;
+    background-color: var(--primary);
+    border-radius: 10px;
 }
