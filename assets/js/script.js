@@ -1,1 +1,1 @@
-console.log('euamo ela')
+console.log('agora eu vou fazer um app para a minha amadaaaa')
