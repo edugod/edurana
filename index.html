@@ -8,16 +8,28 @@
 		<link rel="stylesheet" href="/assets/css/styles.css" />
 	</head>
 	<body>
-        <div class="placar">
-            <div class="lado lado-eduardo">
-              <h2>Eduardo</h2>
-              <p class="gasto-eduardo">Gastos: $0</p>
-            </div>
-            <div class="linha"></div>
-            <div class="lado lado-sarana">
-              <h2>Sarana</h2>
-              <p class="gasto-sarana">Gastos: $0</p>
-            </div>
-          </div>
+		<div class="placar">
+			<div class="lado lado-eduardo">
+				<h2>Eduardo</h2>
+				<p class="gasto-eduardo">Gastos: $0</p>
+			</div>
+			<div class="linha"></div>
+			<div class="lado lado-sarana">
+				<h2>Sarana</h2>
+				<p class="gasto-sarana">Gastos: $0</p>
+			</div>
+		</div>
+		<div class="despesa">
+			<form>
+				<label for="valor">Valor Gasto:</label>
+				<input type="text" id="valor" placeholder="Insira o valor" />
+				<label for="responsavel">Pagador:</label>
+				<select id="responsavel" name="responsavel">
+					<option value="Eduardo">Eduardo</option>
+					<option value="Sarana">Sarana</option>
+				</select>
+				<button type="submit">Adicionar!</button>
+			</form>
+		</div>
 	</body>
 </html>
