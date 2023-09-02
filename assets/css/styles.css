@@ -1,9 +1,8 @@
-:root{ --text: #050200;
---background: #fdeadd;
---primary: #0a66a3;
---secondary: #f9c9a9;
---accent: #0d7ec9;
-
+:root{ --text: #0d000f;
+    --background: #f8d2fe;
+    --primary: #fbe96f;
+    --secondary: #f3b4fd;
+    --accent: #06e0c3;
 
 --font-title: 32px;
 --font-body: 18px;
@@ -11,7 +10,7 @@
 --font-weight-regular: normal;
 --font-weight-bold: bold;
 }
-
+  
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--text);
@@ -22,16 +21,43 @@ body {
     margin: 0;
     background-color: var(--background);
 }
-
-.placar {
+  
+  .placar {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.lado {
+  }
+  
+  .lado {
     width: 200px;
+    height: 200px;
     padding: 20px;
     background-color: var(--primary);
     border-radius: 10px;
-}
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    color: var(--text);
+  }
+  
+  .lado h2 {
+    font-size: var(--font-title);
+    margin: 0;
+    text-align: center;
+  }
+  p {
+    font-size: var(--font-body);
+  }
+  
+  .gasto-eduardo,
+  .gasto-sarana {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .linha {
+    width: 2px;
+    background-color: var(--text);
+    height: 250px;
+    margin: 0 20px;
+  }
+  
