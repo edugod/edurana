@@ -13,8 +13,12 @@
 --border-radius: 10px;
 }
   
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
     color: var(--text);
     display: flex;
     justify-content: center;
@@ -43,17 +47,21 @@ body {
   
   .lado h2 {
     font-size: var(--font-title);
+    font-weight: var(--font-weight-bold);
     margin: 0;
     text-align: center;
   }
   p {
     font-size: var(--font-body);
+    font-weight: var(--font-weight-regular);
   }
   
   .gasto-eduardo,
   .gasto-sarana {
     text-align: center;
     font-weight: bold;
+    font-size: var(--font-small);
+    font-weight: var(--font-weight-regular);
   }
   
   .linha {
@@ -65,8 +73,11 @@ body {
   
   .despesa {
     display: flex;
-    justify-content: center;
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    
     width: 200px;
     height: 200px;
     padding: 20px;
@@ -75,5 +86,32 @@ body {
     box-shadow: var(--box-shadow);
     margin: 10px;
     color: var(--text);
+    font-size: var(--font-body);
+  }
+
+  .despesa button {
+    margin-top: 20px;
+    text-align: center;
+    background-color: var(--accent);
+    border-radius: var(--border-radius);
+  }
+  .despesa button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  .despesa select {
+    border-radius: var(--border-radius);
+    height: 20px;
   }
   
+  .despesa input{
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    border-radius: var(--border-radius);
+  }
+  
+  .despesa input:focus {
+    caret-color: transparent;
+  }
