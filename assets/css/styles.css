@@ -1,128 +1,149 @@
-:root{ --text: #0d000f;
-    --background: #f8d2fe;
-    --primary: #fbe96f;
-    --secondary: #f3b4fd;
-    --accent: #06e0c3;
-    --box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+:root {
+	--text: #0d000f;
+	--background: #f8d2fe;
+	--primary: #fbe96f;
+	--secondary: #f3b4fd;
+	--accent: #06e0c3;
+	--box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 
---font-title: 32px;
---font-body: 18px;
---font-small: 14px;
---font-weight-regular: normal;
---font-weight-bold: bold;
---border-radius: 10px;
+	--font-title: 32px;
+	--font-body: 18px;
+	--font-small: 14px;
+	--font-weight-regular: normal;
+	--font-weight-bold: bold;
+	--border-radius: 10px;
 }
-  
+
 * {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
+	font-family: "Poppins", sans-serif;
+	margin: 0;
 }
 
 body {
-    color: var(--text);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: var(--background);
+	color: var(--text);
+	min-height: 100vh;
+	margin: 0;
+	background-color: var(--background);
 }
-  
-  .placar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .lado {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    background-color: var(--primary);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    margin: 10px;
-    color: var(--text);
-  }
-  
-  .lado h2 {
-    font-size: var(--font-title);
-    font-weight: var(--font-weight-bold);
-    margin: 0;
-    text-align: center;
-  }
-  p {
-    font-size: var(--font-body);
-    font-weight: var(--font-weight-regular);
-  }
-  
-  .gasto-eduardo,
-  .gasto-sarana {
-    text-align: center;
-    font-weight: bold;
-    font-size: var(--font-small);
-    font-weight: var(--font-weight-regular);
-  }
-  
-  .linha {
-    width: 2px;
-    background-color: var(--text);
-    height: 250px;
-    margin: 0 20px;
-  }
-  
-  .despesa {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    
-    width: 200px;
-    height: 100%;
-    padding: 20px;
-    background-color: var(--primary);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    margin: 10px;
-    color: var(--text);
-    font-size: var(--font-body);
-    border: #0d000f solid 1.5px;
-  }
 
-  .despesa form {
-    width: 100%;
-    text-align: center;
-  }
+.placar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-  .despesa button {
-    margin-top: 20px;
-    text-align: center;
-    background-color: var(--accent);
-    border-radius: var(--border-radius);
-  }
-  .despesa button:active {
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-  }
+.addGasto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
 
-  .despesa label,
-  .despesa select,
-  .despesa input {
-    margin: 10px 0;
-  }
+.addGasto button {
+	font-size: var(--font-body);
+	font-weight: var(--font-weight-regular);
+	width: 150px;
+	height: 35px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: var(--accent);
+	border-radius: var(--border-radius);
+}
 
-  .despesa select {
-    border-radius: var(--border-radius);
-    height: 20px;
-  }
-  
-  .despesa input{
-    text-align: center;
-    width: 50px;
-    height: 20px;
-    border-radius: var(--border-radius);
-  }
-  
-  .despesa input:focus {
-    caret-color: transparent;
-  }
+.addGasto button:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.lado {
+	width: 200px;
+	height: 200px;
+	padding: 20px;
+	background-color: var(--primary);
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	margin: 10px;
+	color: var(--text);
+}
+
+.lado h2 {
+	font-size: var(--font-title);
+	font-weight: var(--font-weight-bold);
+	margin: 0;
+	text-align: center;
+}
+p {
+	font-size: var(--font-body);
+	font-weight: var(--font-weight-regular);
+}
+
+.gasto-eduardo,
+.gasto-sarana {
+	text-align: center;
+	font-weight: bold;
+	font-size: var(--font-small);
+	font-weight: var(--font-weight-regular);
+}
+
+.linha {
+	width: 2px;
+	background-color: var(--text);
+	height: 250px;
+	margin: 0 20px;
+}
+
+.despesa {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+
+	width: 200px;
+	height: 100%;
+	padding: 20px;
+	background-color: var(--primary);
+	border-radius: var(--border-radius);
+	box-shadow: var(--box-shadow);
+	margin: 10px;
+	color: var(--text);
+	font-size: var(--font-body);
+	border: #0d000f solid 1.5px;
+}
+
+.despesa form {
+	width: 100%;
+	text-align: center;
+}
+
+.despesa button {
+	margin-top: 20px;
+	text-align: center;
+	background-color: var(--accent);
+	border-radius: var(--border-radius);
+}
+.despesa button:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.despesa label,
+.despesa select,
+.despesa input {
+	margin: 10px 0;
+}
+
+.despesa select {
+	border-radius: var(--border-radius);
+	height: 20px;
+}
+
+.despesa input {
+	text-align: center;
+	width: 50px;
+	height: 20px;
+	border-radius: var(--border-radius);
+}
+
+.despesa input:focus {
+	caret-color: transparent;
+}
