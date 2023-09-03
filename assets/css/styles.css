@@ -20,39 +20,21 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+	align-items: center;
 	color: var(--text);
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--background);
 }
 
+/* ---------------------------------- PLACAR------------------------- */
+
 .placar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-.addGasto {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
-}
-
-.addGasto button {
-	font-size: var(--font-body);
-	font-weight: var(--font-weight-regular);
-	width: 150px;
-	height: 35px;
-	margin-top: 20px;
-	text-align: center;
-	background-color: var(--accent);
-	border-radius: var(--border-radius);
-}
-
-.addGasto button:active {
-	box-shadow: 0 5px #666;
-	transform: translateY(4px);
 }
 
 .lado {
@@ -91,6 +73,32 @@ p {
 	height: 250px;
 	margin: 0 20px;
 }
+
+/* ---------------------------------- ADICIOANR GASTO------------------------- */
+.addGasto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.addGasto button {
+	font-size: var(--font-body);
+	font-weight: var(--font-weight-regular);
+	width: 150px;
+	height: 35px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: var(--accent);
+	border-radius: var(--border-radius);
+}
+
+.addGasto button:active {
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+/* ---------------------------------- jANELA DESPESA ------------------------- */
 
 .despesa {
 	display: none;
