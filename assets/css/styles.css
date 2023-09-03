@@ -29,7 +29,7 @@ body {
 }
   
   .placar {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
@@ -72,14 +72,13 @@ body {
   }
   
   .despesa {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: flex-start;
     
     width: 200px;
-    height: 200px;
+    height: 100%;
     padding: 20px;
     background-color: var(--primary);
     border-radius: var(--border-radius);
@@ -87,6 +86,12 @@ body {
     margin: 10px;
     color: var(--text);
     font-size: var(--font-body);
+    border: #0d000f solid 1.5px;
+  }
+
+  .despesa form {
+    width: 100%;
+    text-align: center;
   }
 
   .despesa button {
@@ -98,6 +103,12 @@ body {
   .despesa button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+  }
+
+  .despesa label,
+  .despesa select,
+  .despesa input {
+    margin: 10px 0;
   }
 
   .despesa select {
