@@ -1,3 +1,1 @@
-console.log('faz tempo em mermão.....')
-
-console.log('triste')
+console.log('eu olhei um pouco sobre o calculator')
